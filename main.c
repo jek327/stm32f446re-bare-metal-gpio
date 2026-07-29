@@ -35,13 +35,18 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+
+	// Set Output Data Register bit to turn on LED
 	GPIOA->ODR |= 0x00000020;
 
+	// Delay to keep LED on for fixed amount of time
 	for (volatile int i = 0; i < 1000000; i++)
 	{}
 
+	// Reset Output Data Register bit to turn off LED
 	GPIOA->ODR &= ~(0x00000020);
 
+	// Delay to keep LED off for fixed amount of time
 	for (volatile int i = 0; i < 1000000; i++)
 	{}
 
