@@ -19,6 +19,8 @@ Bare-metal GPIO programming on the STM32F446RE using direct register manipulatio
 - Bit masking
 - Busy-wait delay
 
+![LED Blink](Downloads/gif.gif)
+
 ## Author
 
 Jeeva Kumararaja
