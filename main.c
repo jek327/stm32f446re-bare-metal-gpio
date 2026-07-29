@@ -34,7 +34,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
 
 	// Set Output Data Register bit to turn on LED
 	GPIOA->ODR |= 0x00000020;
@@ -50,8 +49,7 @@ int main(void)
 	for (volatile int i = 0; i < 1000000; i++)
 	{}
 
-    /* USER CODE BEGIN 3 */
   }
-  /* USER CODE END 3 */
+/* USER CODE END WHILE */
 }
 
